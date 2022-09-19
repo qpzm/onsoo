@@ -1,0 +1,5 @@
+loc1 = input("도 : ")
+loc2 = input("시 : ")
+loc3 = input("구 : ")
+loc4 = input("나머지 : ")
+print("저의 주소는", loc1, loc2, loc3, loc4, "입니다.")

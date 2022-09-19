@@ -12,9 +12,19 @@ print(i, "+", end=' ') 사용하면 여러 개 출력문이 한 줄에 출력된
 
 num1=int(input("첫번째 양의 정수 입력: "))
 num2=int(input("두번째 양의 정수 입력: "))
+op = "-"
+#res = 
 if num1<num2:
-    for i in range(num1, num2+1)
-elif num1>num2:
-    for i in range
-else:
-    print("입력 에러입니다.")
+    for i in range(num1, num2+1):
+        if num2 == i:
+            op = "="
+        print(i, op, end=" ")
+        if op == "-":
+            op = "+"
+        elif op == "+":
+            op="-"
+    
+# elif num1>num2:
+#     for i in range
+# else:
+#     print("입력 에러입니다.")
