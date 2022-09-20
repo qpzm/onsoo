@@ -22,11 +22,17 @@
 #     print(string[i])
 
 #4번 문제
+# count = 0
+# letter =input("문자 입력 : ")
+# vowels = "AEIOUaeiou"
+# for i in range(0, len(letter)):
+#     if letter[i] in "AEIOUaeiou":
+#         count=count+1
+# print(count)
+
+  
 count = 0
-letter =input("문자 입력 : ")
-vowels = "AEIOUaeiou"
-for i in range(0, len(letter)):
-    if letter[i] in "AEIOUaeiou":
-        count=count+1
-print(count)
+for i in range(1,11):
+  if i%3==0:
+    print(i)
 
