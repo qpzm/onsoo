@@ -1,0 +1,35 @@
+num1 = int(input("첫번째 양의 정수 입력: "))
+num2 = int(input("두번째 양의 정수 입력: "))
+op = "+"
+res = 0
+if num1 < num2:
+    for i in range(num1, num2 + 1):
+        # 맨 처음이면 + 를 안 찍겠다.
+        if i == num1:
+            print(i, end=" ")
+        else:
+            print(op, i, end=" ")
+        # 지금 +면 i를 더하고 -로 바꾼다.
+        if op == "-":
+            res = res - i
+            op = "+"
+        else:
+            res = res + i
+            op = "-"
+    # = res 를 출력
+    print("=", res, end=" ")
+elif num1 > num2:
+    for i in range(num1, num2 - 1,-1):
+        if i ==num1:
+            print(i, end=" ")
+        else:
+            print(op, i, end=" ")
+        if op =="-":
+            res = res - i
+            op = "+"
+        else:
+            res =res + i
+            op = "-"
+    print("=", res, end=" ")
+else: 
+    print("다시 입려하시오.")

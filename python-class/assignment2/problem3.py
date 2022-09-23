@@ -10,21 +10,48 @@ print(i, "+", end=' ') 사용하면 여러 개 출력문이 한 줄에 출력된
 입력 정수가 3과 3인 경우, “입력 에러입니다”
 '''
 
-num1=int(input("첫번째 양의 정수 입력: "))
-num2=int(input("두번째 양의 정수 입력: "))
+# num1=int(input("첫번째 양의 정수 입력: "))
+# num2=int(input("두번째 양의 정수 입력: "))
+# op = "-"
+# if num1<num2:
+#     for i in range(num1, num2+1):
+#         if num2 == i:
+#             op = "="
+#         print(i, op, end=" ")
+#         if op == "-":
+#             op = "+"
+#         elif op == "+":
+#             op="-"
+    
+
+num1 = int(input("첫번째 양의 정수 입력: "))
+num2 = int(input("두번째 양의 정수 입력: "))
 op = "-"
-#res = 
-if num1<num2:
-    for i in range(num1, num2+1):
-        if num2 == i:
-            op = "="
-        print(i, op, end=" ")
+x = 0
+y = 1
+if num1 < num2:
+    for i in range(num1, num2 + 1):
+        if i == num2:
+            print(i, end = ' ')
+        else:
+            print(i, op, end=" ") # (3 -) (4 +) (5 -) (6 +)
         if op == "-":
             op = "+"
+            x = x + i # op == "-" 이면 더하기를 하라
         elif op == "+":
-            op="-"
-    
+            op = "-"
+            x = x - i
+
+    for i in range(num1, num2 + 1):
+        if y % 2 == 1:
+            x = x + i
+        elif y % 2 == 0:
+            x = x - i
+        y = y + 1
+        #print(f'i: {i}, x: {x}, y: {y}')
+
+    print("=", x, end=' ')
 # elif num1>num2:
 #     for i in range
 # else:
-#     print("입력 에러입니다.")
+#     print("입력 에러입니다")

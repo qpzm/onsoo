@@ -1,0 +1,29 @@
+age = int(input("나이 입력: "))
+if age < 18:
+    print("미성년자")
+else:
+    print("성인")
+
+age = int(input("나이 입력: "))
+if age <18:
+    print("미성년자")
+elif age < 60:
+    print("장년")
+else:
+    print("노년")
+
+f = "banana"
+if "a" in f:
+    print(f, "에는 a가 있습니다.")
+if "b" in f:
+    print(f, "에는 b가 있습니다.")
+
+score = float(input("성적 입력: "))
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")

@@ -12,8 +12,7 @@ if num>0:
         x=1
         for j in range(i,0,-1):
             x = x * j
-        print(x)
-        print(i, end=' ')
+        print(x, end=', ')
 
 else:
     print("계산할 수 없는 값입니다.")
