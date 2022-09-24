@@ -27,7 +27,31 @@
 # print("i=", i)
 # #왜 i가 1이 아니고 2지?
 
-num = int(input("정수의 개수: "))
-while num <= 0:
-    num=input("정수의 개수: ")
-#어떨 때 어떤 변수를 몇개를 써야할지 모르겠다!
+# numofnum = 0
+# count = 1
+# sum = 0
+# while numofnum <= 0:
+#     numofnum=int(input("정수의 개수: "))
+# while count <= numofnum:
+#     num = float(input("숫자를 입력하세요: "))
+#     count=count+1
+#     sum = sum+num
+# print("입력받은 수들의 평균은" , sum/numofnum)
+# #어떨 때 어떤 변수를 몇개를 써야할지 모르겠다!
+
+# price = 0
+# count = 0
+# sum = 0
+# while price <= 10000:
+#     price = int(input("구매할 물건의 금액을 입력하세요."))
+#     if price <= 10000:
+#         count = count+1
+#         sum = sum + price
+# print("물건의 개수는", count, "이고 금액의 합계는", sum, "원입니다")
+# #if문을 안 쓰면 10000원 넘어간 값도 합계에 계산 되기 때문에 if문 꼭 써야 함
+
+name = 0
+count = 0
+while name != "김" or "최" or "이" and count <= 5:
+    name = input("성을 입력하세요: ")
+    count = count + 1
